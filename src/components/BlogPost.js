@@ -3,12 +3,14 @@ import BlogContent from "./BlogContent";
 import Comment from "./Comment";
 
 function BlogPost() {
+  const articleText = "Dear Reader: Bjarne Stroustrup has the perfect lecture oration.";
+  const commentText = ["I agree with this statement. - Angela Merkel","A universal truth. - Noam Chomsky","Truth is singular. Its ‘versions’ are mistruths. - Sonmi-451"];
   return (
     <div id="blog-post">
-      <BlogContent articleText="Dear Reader: Bjarne Stroustrup has the perfect lecture oration." />
-      <Comment commentText="I agree with this statement. - Angela Merkel" />
-      <Comment commentText="A universal truth. - Noam Chomsky" />
-      <Comment commentText="Truth is singular. Its ‘versions’ are mistruths. - Sonmi-451" />
+      <BlogContent articleText= {articleText} />
+      <Comment commentText= {commentText[0]}/>
+      <Comment commentText= {commentText[1]}/>
+      <Comment commentText= {commentText[2]}/>
     </div>
   );
 }
